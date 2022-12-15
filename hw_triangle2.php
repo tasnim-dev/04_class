@@ -1,21 +1,14 @@
-<?php 
+<?php
 
-
-    $try1 = "";
-
-    for($i= 5; $i >=0 ; $i--){
-        for ($j= 0; $j <= $i  ; $j++){
-            echo "  * ";
+    
+    for($i=1; $i<=5; $i++){
+        for($j=1; $j<= 5-$i; $j++){
+            echo "&nbsp;&nbsp;"; // non-breaking space
         }
-       
-        for($k= 0; $k <=$i; $i++){
-            
-            }
-    
-    
-            echo $try1 . "</br>";
-            $try1 = "";
 
-}
-
+        for($k=1; $k<=$i; $k++){
+            echo  "*&nbsp;&nbsp;";
+        }
+        echo  "<br/>";
+    }
 ?>
